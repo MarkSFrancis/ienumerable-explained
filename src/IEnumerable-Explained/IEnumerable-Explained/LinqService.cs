@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Explained
 {
@@ -31,10 +32,22 @@ namespace Explained
         {
             foreach (var text in texts)
             {
-                if (!shouldKeep(text))
+                if (shouldKeep(text))
                 {
                     yield return text;
                 }
+            }
+        }
+
+        public static IEnumerable<string> InAlphabeticalOrder(this IEnumerable<string> texts, bool ascending = true)
+        {
+            if (ascending)
+            {
+                return texts.OrderBy(t => t);
+            }
+            else
+            {
+                return texts.OrderByDescending(t => t);
             }
         }
     }
