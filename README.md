@@ -2,6 +2,21 @@
 
 This solution contains examples of `LINQ` queries, `IEnumerable` with `yield`, and `IEnumerator` in use. You can clone this solution by clicking "Clone or Download` in the top right.
 
+## Table of Contents
+* [The basics](#the-basics)
+  * [IEnumerable](#ienumerable)
+  * [IEnumerator](#ienumerator)
+  * [Using IEnumerable and IEnumerator](#using-ienumerable-and-ienumerator)
+  * [What's LINQ?](#whats-linq)
+* [The 3 Stages](#the-3-stages)
+* [Obtaining/ generating data](#obtaining-generating-data)
+  * [Using `yield return` and `yield break` to generate data](#using-yield-return-and-yield-break-to-generate-data)
+  * [Using `yield` to generate collections](#using-yield-to-generate-collections)  
+* [LINQ](#LINQ)
+  * [LINQ that doesn't stack](#linq-that-doesnt-stack)
+  * [Using `IEnumerable` in your own queries](#using-ienumerable-in-your-own-queries)
+* [`List<T>` vs `IEnumerable<T>`/ `IEnumerator<T>`](#listt-vs-ienumerablet-ienumeratort)
+
 # The basics
 
 ## IEnumerable
@@ -284,7 +299,7 @@ You can always tell which methods will execute an IEnumerable by looking at thei
 
 Examples include `.Count` (returns `int`), `.Any` (returns `bool`) and `.First` (returns `T`). There are many others too.
 
-## Using IEnumerable in your own queries
+## Using `IEnumerable` in your own queries
 
 Writing your own queries is not as complicated as it may seem. Thanks to `foreach` and the `yield` keyword you saw earlier, you can create your own query methods with relative ease.
 
