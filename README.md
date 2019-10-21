@@ -1,5 +1,7 @@
 # C# - IEnumerable Explained
 
+![Build status](https://github.com/MarkSFrancis/ienumerable-explained/workflows/.NET%20Core%20CI/badge.svg)
+
 This solution contains examples of `LINQ` queries, `IEnumerable` with `yield`, and `IEnumerator` in use. You can clone this solution by clicking "Clone or Download` in the top right.
 
 ## Table of Contents
